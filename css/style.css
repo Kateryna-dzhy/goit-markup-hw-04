@@ -92,6 +92,10 @@ img {
   line-height: 1.192;
   letter-spacing: 0.03em;
 }
+.logo-link:hover,
+.logo-link:focus {
+  opacity: 0.5;
+}
 .blue-part {
   color: var(--accent-color);
 }
@@ -137,6 +141,7 @@ img {
   display: flex;
   padding-top: 31px;
   padding-bottom: 31px;
+  align-items: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -156,8 +161,8 @@ img {
 .contact-list-item:not(:last-child) {
   margin-right: 48px;
 }
-.contact-list-item:hover .contact-list-icon,
-.contact-list-item:focus .contact-list-icon {
+.contact-list-link:hover .contact-list-icon,
+.contact-list-link:focus .contact-list-icon {
   fill: var(--accent-color);
 }
 .contact-list-icon {
@@ -254,6 +259,13 @@ img {
   padding: 30px, 20px;
   margin-left: 485px;
   margin-right: 485px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+  cursor: pointer;
 }
 /*стилизация особенностей*/
 
@@ -630,16 +642,18 @@ img {
   border: none;
   border-radius: 4px;
 }
-.active-button {
+.filter-list-item-button:hover,
+.filter-list-item-button:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /*стилизация блока с проектами*/
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /*align-items: center;*/
   margin: -15px;
 }
 
@@ -647,7 +661,7 @@ img {
   max-width: 370px;
   margin: 15px;
 
-  border: 1px solid #eeeeee;
+  outline: 1px solid #eeeeee;
 }
 
 .project-list-link {
