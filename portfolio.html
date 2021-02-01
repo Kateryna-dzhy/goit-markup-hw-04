@@ -15,32 +15,42 @@
 
 <body>
     <header class="header">
-    <div class="container">
-        <nav class="navigation">
-            <a class="logo-link link" href="index.html">
-                <span class="logo blue-part" lang="en">Web</span><span class="logo black-part" lang="en">Studio</span>
-            </a>
-            <ul class="navigation-list">
-                <li class="navigation-list-item list">
-                    <a class="navigation-list-link link" href="index.html">Студия</a>
+        <div class="container">
+            <nav class="navigation">
+                <a class="logo-link link" href="index.html">
+                    <span class="logo blue-part" lang="en">Web</span><span class="logo black-part" lang="en">Studio</span>
+                </a>
+                <ul class="navigation-list">
+                    <li class="navigation-list-item list">
+                        <a class="navigation-list-link link" href="index.html">Студия</a>
+                    </li>
+                    <li class="navigation-list-item list">
+                        <a class="navigation-list-link active link" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="navigation-list-item list">
+                        <a class="navigation-list-link link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contact-list">
+                <li class="contact-list-item list">
+                    <svg class="contact-list-icon envelope">
+                        <use href="./images/icons/symbol-defs.svg#icon-envelopesvg">
+                        </use>
+                    </svg>
+                    <a class="contact-list-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="navigation-list-item list">
-                    <a class="navigation-list-link active link" href="portfolio.html">Портфолио</a>
-                </li>
-                <li class="navigation-list-item list">
-                    <a class="navigation-list-link link" href="#">Контакты</a>
+    
+                <li class="contact-list-item list">
+                    <svg class="contact-list-icon smart-phone">
+                        <use href="./images/icons/symbol-defs.svg#icon-smart-phonesvg">
+                        </use>
+                    </svg>
+                    <a class="contact-list-link link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-        <ul class="contact-list">
-            <li class="contact-list-item list">
-                <a class="contact-list-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="contact-list-item list">
-                <a class="contact-list-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
-    </div>
+        </div>
+    
     </header>
     <main>
         <!--Проекты-->
@@ -167,23 +177,65 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <a class="logo-link link" href="index.html">
-                <span class="logo blue-part" lang="en">Web</span><span class="logo white-part" lang="en">Studio</span>
-            </a>
-            <address class="address">
-                <ul class="address-list">
-                    <li class="address-list-item list">
-                        <a class="address-list-link physical-address link" href="https://goo.gl/maps/CEuguE6YdpML6xbj7"
-                            target="_blank">г.Киев, пр-т Леси Украинки, 26</a>
+            <div class="footer-block-address">
+                <a class="logo-link link" href="index.html">
+                    <span class="logo blue-part" lang="en">Web</span><span class="logo white-part" lang="en">Studio</span>
+                </a>
+                <address class="address">
+                    <ul class="address-list">
+                        <li class="address-list-item list">
+                            <a class="address-list-link physical-address link" href="https://goo.gl/maps/CEuguE6YdpML6xbj7"
+                                target="_blank">г.Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="address-list-item list">
+                            <a class="address-list-link link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="address-list-item list link">
+                            <a class="address-list-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+    
+            <div class="footer-block-connect">
+                <p class="connect">Присоединяйтесь</p>
+                <ul class="footer-social-links-list list">
+                    <li class="footer-social-links-item">
+                        <a class="footer-social-links-address link" href="#">
+                            <svg class="social-links-icon">
+                                <use href="./images/icons/symbol-defs.svg#icon-instagram-activesvg">
+                                </use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="address-list-item list">
-                        <a class="address-list-link link" href="mailto:info@example.com">info@example.com</a>
+                    <li class="footer-social-links-item">
+                        <a class="footer-social-links-address link" href="#">
+                            <svg class="social-links-icon">
+                                <use href="./images/icons/symbol-defs.svg#icon-twittersvg">
+                                </use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="address-list-item list link">
-                        <a class="address-list-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="footer-social-links-item">
+                        <a class="footer-social-links-address link" href="#">
+                            <svg class="social-links-icon">
+                                <use href="./images/icons/symbol-defs.svg#icon-facebooksvg">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-links-item">
+                        <a class="footer-social-links-address link" href="#">
+                            <svg class="social-links-icon">
+                                <use href="./images/icons/symbol-defs.svg#icon-linkedinsvg">
+                                </use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
+            </div>
+    
+    
         </div>
     </footer>
 </body>

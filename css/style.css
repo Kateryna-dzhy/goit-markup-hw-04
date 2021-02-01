@@ -119,12 +119,12 @@ img {
 
   color: #212121;
 }
-.navigation-list-link:hover,
-.navigation-list-link:focus {
+.active {
   color: var(--accent-color);
 }
 
-.active {
+.navigation-list-link:hover,
+.navigation-list-link:focus {
   color: var(--accent-color);
 }
 
@@ -134,6 +134,7 @@ img {
   margin-left: auto;
 }
 .contact-list-link {
+  display: flex;
   padding-top: 31px;
   padding-bottom: 31px;
 
@@ -148,11 +149,30 @@ img {
 .contact-list-link:focus {
   color: var(--accent-color);
 }
-
+.contact-list-item {
+  display: flex;
+  align-items: center;
+}
 .contact-list-item:not(:last-child) {
   margin-right: 48px;
 }
+.contact-list-item:hover .contact-list-icon,
+.contact-list-item:focus .contact-list-icon {
+  fill: var(--accent-color);
+}
+.contact-list-icon {
+  fill: var(--text-color);
+  margin-right: 5px;
+}
+.smart-phone {
+  width: 10px;
+  height: 16px;
+}
 
+.envelope {
+  width: 16px;
+  height: 12px;
+}
 /* стилизация hero*/
 .hero-block {
   background-color: #2f303a;
@@ -168,10 +188,37 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background: linear-gradient(to right, rgb(47, 48, 58), rgba(47, 48, 58, 0.4));
-  background-image: url(../images/background/heroe-image.jpg.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background/heroe-image.jpg.jpg);
 }
 
+.contact-list-icon-envelope {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+}
+
+/*.contact-list-icon-envelope .active:hover {
+  fill: var(--accent-color);
+}*/
+
+.contact-list-icon-smart-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -227,6 +274,25 @@ img {
 .features-list-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.features-icon-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+.features-list-icon {
+  width: 70px;
+  height: 70px;
+}
+
+/*fill: #757575;*/
+
 .features-list-title {
   font-weight: 700;
   font-size: 14px;
@@ -308,6 +374,8 @@ img {
 
   background-color: var(--background-color);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-list-item {
@@ -330,6 +398,7 @@ img {
   line-height: 1.172;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 16px;
 
   color: var(--text-color);
 }
@@ -340,6 +409,111 @@ img {
   padding-bottom: 30px;
 }
 
+.social-links-list {
+  display: flex;
+  /*flex-wrap: nowrap;*/
+  align-items: center;
+  justify-content: center;
+  margin: -5px;
+}
+
+.social-links-address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.social-links-address:hover,
+.social-links-address:focus {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
+.social-links-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-links-address:hover .social-links-icon,
+.social-links-address:focus .social-links-icon {
+  fill: #ffffff;
+}
+
+/*секция клиенты*/
+.clients-block {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-color);
+
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: -15px;
+}
+
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  margin: 15px;
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--accent-color);
+}
+.clients-list-icon {
+  fill: #afb1b8;
+}
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
+  fill: var(--accent-color);
+}
+.client-1 {
+  width: 44.27px;
+  height: 49.23px;
+}
+.client-2 {
+  width: 40px;
+  height: 52px;
+}
+.client-3 {
+  width: 41px;
+  height: 42.6px;
+}
+.client-4 {
+  width: 79.66;
+  height: 42.02px;
+}
+.client-5 {
+  width: 59px;
+  height: 47px;
+}
+.client-6 {
+  width: 88.48px;
+  height: 45.44px;
+}
+
+/*стилизация футера*/
 .footer {
   background-color: var(--background-color-additional);
   padding-top: 60px;
@@ -372,6 +546,53 @@ img {
   color: #ffffff;
 }
 
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-block-address {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.footer-block-connect {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.footer-social-links-list {
+  display: flex;
+  align-items: flex-start;
+  margin: -5px;
+}
+.connect {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-social-links-address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  margin: 5px;
+}
+.footer-social-links-address:hover,
+.footer-social-links-address:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-links-item .social-links-icon {
+  fill: #ffffff;
+}
 /*стилизация портфолио*/
 .projects {
   padding-top: 94px;
@@ -431,6 +652,11 @@ img {
 
 .project-list-link {
   color: var(--text-color);
+}
+.project-list-link:hover,
+.project-list-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-list-title {
